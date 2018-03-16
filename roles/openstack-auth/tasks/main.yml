@@ -3,6 +3,6 @@
 - name: Authenticate to the cloud to get token
   os_auth:
     auth:
-      - auth_url: "{{ URL }}"
-      - username: "{{ USERNAME }}"
-      - pasword:  "{{ PASSWORD }}"
+      auth_url: "{{ URL }}"
+      username: "{{ USERNAME }}"
+      pasword:  "{{ PASSWORD }}"
