@@ -1,0 +1,16 @@
+---
+- name: use vhost role playbook
+  hosts: packstack
+
+  pre_tasks:
+    - debug:
+        msg: 'Beginning Openstack configuration.'
+
+  roles:
+    - openstack-auth
+    - openstack-setup
+
+  post_tasks:
+    - debug:
+        msg: 'Openstack has been configured.' 
+
