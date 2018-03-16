@@ -1,0 +1,5 @@
+---
+# vars file for openstack-auth
+URL: 'http://172.24.216.40:5000/v2.0'
+USERNAME: 'admin'
+PASSWORD: '9da4a0ea1b494b93'

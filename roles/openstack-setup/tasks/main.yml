@@ -1,0 +1,18 @@
+---
+# tasks file for openstack-setup
+- name: Create a tenant
+  keystone_user:
+    tenant: demo2
+    tenant_description: "Default Tenant"
+
+- name: Create a user
+  keystone_user:
+    user: john
+    tenant: demo2
+    password: secrete
+
+- name: Apply the admin role to the john user in the demo tenant
+  keystone_user:
+    role: admin
+    user: john
+    tenant: demo2
